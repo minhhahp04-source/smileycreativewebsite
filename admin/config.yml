@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "wp-content/uploads/admin_uploads"
+public_folder: "/wp-content/uploads/admin_uploads"
+
+collections:
+  - name: "website_info"
+    label: "Thông tin Website & Liên hệ"
+    files:
+      - name: "general"
+        label: "Thông tin liên hệ & Thương hiệu"
+        file: "data/general.json"
+        fields:
+          - { label: "Tên thương hiệu", name: "brand_name", widget: "string", default: "Smiley Creative" }
+          - { label: "Slogan", name: "slogan", widget: "string", default: "Vùng Đất Nụ Cười" }
+          - { label: "Số Hotline", name: "hotline", widget: "string", default: "0989.413.613" }
+          - { label: "Email", name: "email", widget: "string", default: "Smileycreative26@gmail.com" }
+          - { label: "Link Facebook", name: "facebook", widget: "string", default: "https://www.facebook.com/smileycreative26" }
+          - { label: "Link Youtube", name: "youtube", widget: "string", default: "https://www.youtube.com/@Smiley%20Creative.official" }
+      - name: "founder"
+        label: "Thông tin Founder"
+        file: "data/founder.json"
+        fields:
+          - { label: "Tên Founder", name: "name", widget: "string", default: "Hoàng Xuân Trường" }
+          - { label: "Chức vụ", name: "role", widget: "string", default: "Giảng viên Marketing tại Đại học Hải Phòng" }
+          - { label: "Đoạn giới thiệu", name: "bio", widget: "text", default: "Tôi là Hoàng Xuân Trường – Giảng viên Marketing tại Đại học Hải Phòng, với hơn 15 năm kinh nghiệm Truyền thông – Marketing và thực chiến tại doanh nghiệp." }
